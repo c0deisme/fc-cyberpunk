@@ -8,7 +8,7 @@ function check($thingy){
 }
 
 $USE_SSL = true;
-$api_key = "6e9763826987e3f237441c3392a79390956f50af";
+$api_key = file_get_contents("key.txt");
 $postdata = http_build_query( array(
     "fn" => "user",
     "sub" => "earnings",
